@@ -2,121 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Professional Experience | Shreyash Mishra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Shreyash Mishra | Experience</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f8f4ef;
+            color: #2d2b2b;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #d2b48c;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #000;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
             margin: 0;
             padding: 0;
-            background-color: #f4f6f8;
-            color: #333;
         }
-
-        header {
-            background-color: #0a192f;
-            color: #fff;
+        .nav-links li a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #000;
+            transition: 0.3s;
+        }
+        .nav-links li a:hover {
+            color: #8b5e3c;
+        }
+        .section {
+            padding: 60px 10%;
+        }
+        h1, h2, h3, h4 {
+            margin: 0 0 10px 0;
+        }
+        h1 {
+            color: #8b5e3c;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            padding: 22px;
+            border-radius: 14px;
+            box-shadow: 0 6px 15px rgba(0,0,0,.15);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        ul {
+            padding-left: 18px;
+        }
+        footer {
+            background: #d2b48c;
             padding: 20px;
             text-align: center;
+            font-weight: 600;
         }
-
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        a.link {
+            color: #8b5e3c;
+            font-weight: 600;
+            text-decoration: none;
         }
-
-        h2 {
-            color: #0a192f;
-            border-bottom: 2px solid #0a192f;
-            padding-bottom: 8px;
-            margin-bottom: 25px;
-        }
-
-        .experience {
-            margin-bottom: 30px;
-        }
-
-        .experience h3 {
-            margin: 0;
-            color: #112240;
-        }
-
-        .company {
-            font-weight: bold;
-            color: #555;
-        }
-
-        .duration {
-            font-style: italic;
-            color: #777;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-            line-height: 1.6;
+        a.link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Professional Experience</h1>
+  <nav class="navbar">
+    <div class="logo">Shreyash Mishra</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section>
+<section class="section">
+    <h1>Professional Experience</h1>
+    <p>Here is a detailed view of my career journey, highlighting my roles, responsibilities, and contributions in cloud computing and security engineering.</p>
 
-    <!-- Senior Cloud Engineer -->
-    <div class="experience">
-        <h3>Senior Cloud Engineer</h3>
-        <p class="company">IBM</p>
-        <p class="duration">Duration: 1 Year</p>
-        <ul>
-            <li>Worked extensively with <strong>Azure Sentinel</strong> and <strong>KQL</strong> for advanced threat detection, log analysis, and incident response.</li>
-            <li>Collaborated with DevOps teams to integrate <strong>CI/CD pipelines</strong> and enforce cloud security best practices.</li>
-            <li>Assisted in deploying and managing <strong>Kubernetes clusters</strong> and cloud-native services.</li>
-            <li>Improved overall cloud security posture and operational efficiency.</li>
-        </ul>
+    <div class="cards">
+        <div class="card">
+            <h3>Senior Cloud Engineer</h3>
+            <h4>IBM | 1 Year</h4>
+            <ul>
+                <li>Worked extensively with Azure Sentinel and KQL for threat detection, log analysis, and incident response.</li>
+                <li>Supported SOC operations including malware detection, email security, and unified threat management.</li>
+                <li>Collaborated with DevOps teams to integrate CI/CD pipelines and enforce security best practices.</li>
+                <li>Implemented monitoring and alerting solutions for cloud infrastructure.</li>
+                <li>Mentored junior engineers and interns on cloud security and best practices.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Engineer</h3>
+            <h4>IBM | 2 Years 2 Months</h4>
+            <ul>
+                <li>Designed, deployed, and maintained secure cloud infrastructure on AWS and Azure.</li>
+                <li>Implemented IAM, cloud security controls, and monitoring solutions.</li>
+                <li>Automated infrastructure provisioning using Terraform.</li>
+                <li>Assisted in deploying and managing Kubernetes clusters.</li>
+                <li>Participated in incident response drills and vulnerability assessments.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Computing Intern</h3>
+            <h4>Thoughtbox | 1 Year</h4>
+            <ul>
+                <li>Learned cloud fundamentals including VMs, networking, and storage services.</li>
+                <li>Assisted in monitoring cloud resources and performing automation tasks.</li>
+                <li>Developed small scripts to automate repetitive cloud tasks.</li>
+                <li>Supported senior engineers in day-to-day cloud operations.</li>
+            </ul>
+        </div>
     </div>
-
-    <!-- Cloud Engineer -->
-    <div class="experience">
-        <h3>Cloud Engineer</h3>
-        <p class="company">IBM</p>
-        <p class="duration">Duration: 1 Year 2 Months</p>
-        <ul>
-            <li>Supported <strong>SOC operations</strong> including malware detection, email security, and unified threat management.</li>
-            <li>Automated infrastructure provisioning using <strong>Terraform</strong>, improving deployment efficiency and consistency.</li>
-            <li>Monitored cloud environments and assisted in troubleshooting security and performance issues.</li>
-            <li>Worked with cross-functional teams to maintain reliable cloud infrastructure.</li>
-        </ul>
-    </div>
-
-    <!-- Internship -->
-    <div class="experience">
-        <h3>Cloud Computing Intern</h3>
-        <p class="company">ThoughtBox</p>
-        <p class="duration">Duration: 1 Year</p>
-        <ul>
-            <li>Gained hands-on experience with cloud computing concepts and services.</li>
-            <li>Assisted in configuring and managing cloud resources under senior engineers.</li>
-            <li>Learned cloud security, virtualization, and infrastructure management fundamentals.</li>
-            <li>Supported documentation and testing for cloud-based solutions.</li>
-        </ul>
-    </div>
-
 </section>
+
+<footer>
+    © 2026 Shreyash Mishra | Cloud Architect & Security Engineer
+</footer>
 
 </body>
 </html>
-
